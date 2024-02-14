@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-login {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: ". .";
+}
+
+.left-login {
+    width: 100%;
+    height: 100vh;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #EBD4EA;
+    border-radius: 0px 24px 24px 0px;
+    gap: 24px;
+
+}
+
+.left-login-logo {
+    width: 100%;
+    padding-right: 75%;
+
+}
+
+.left-login-image {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.card-left {
+    max-width: 55%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.card-left>h1 {
+    font-size: 40px;
+    line-height: 130%;
+}
+
+.card-left>h2 {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.right-login {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    height: 419px;
+    margin: 175px 144px 175px 104px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px 35px;
+    gap: 24px;
+}
+
+.right-cadastro {
+    width: 40vw;
+    max-height: 933px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textfield {
+    color: #6A626A;
+    width: 100%;
+    display: flex;
+    font-weight: 500;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.textfield>input {
+    width: 100%;
+    height: 63px;
+    border: none;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #E6E5E6;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield>label {
+    margin-bottom: 10px;
+}
+
+input::placeholder {
+    font-size: 16px;
+}
+
+.btn-login {
+    width: 50%;
+    padding: 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    outline: none;
+    color: #ffffff;
+    background-color: #81287C;
+    cursor: pointer;
+    box-shadow: none;
+    justify-content: center;
+    display: inline-flex;
+    gap: 0px 8px;
+}
+
+.btn-cadastro {
+    width: 70%;
+    padding: 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    outline: none;
+    color: #ffffff;
+    background-color: #81287C;
+    cursor: pointer;
+    box-shadow: none;
+    justify-content: center;
+    display: inline-flex;
+    gap: 0px 8px;
+}
+
+
+/* Define o estilo da div */
+.home {
+    /* Define a largura da div como 30% da largura da tela */
+    width: 30%;
+    /* Define a altura da div como 30% da altura da tela */
+    height: 30%;
+    /* Define a cor de fundo da div */
+    background-color: #f0f0f0;
+    /* Centraliza o texto dos elementos dentro da div */
+    text-align: center;
+    /* Define a margem superior e inferior da div como 35% da altura da tela */
+    margin-top: 35%;
+    margin-bottom: 35%;
+    /* Define a margem esquerda e direita da div como automática */
+    margin-left: auto;
+    margin-right: auto;
+    /* Define a posição da div como relativa */
+    position: relative;
+  }
+  
+
+
+a {
+    color: #81287C;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .main-login {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-login{
+        height: 320px;
+        text-align: start;
+        align-items: start;
+        gap: 8px;
+    }
+
+    .left-login-logo{
+        width: 73.5px;
+        height: 18px;
+        padding-left: 24px;
+    }
+
+    .left-login-image {
+        display: none;
+    }
+
+    .card-left {
+        max-width: 100%;
+        padding: 24px 24px 0 24px;
+    }
+
+    .card-left>h1 {
+        font-size: 24px;
+        line-height: 130%;
+        font-weight: 600;
+        text-align: start;
+        align-items: start;
+    }
+    
+    .card-left>h2 {
+        font-size: 16px;
+        font-weight: 400;
+        text-align: start;
+        align-items: start;
+    }
+
+    .right-login {
+        width: 100%;
+        height: 495px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-login {
+        width: 90%;
+        height: 423px;
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .right-cadastro {
+        width: 100%;
+        height: 755px;
+        gap: 24px;
+    }
+    .textfield{
+        margin: 0px;
+    }
+
+    .title{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .textfield {
+        width: 100%;
+    }
+
+    .btn-login {
+        width: 100%;
+    }
+}
